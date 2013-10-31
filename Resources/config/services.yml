@@ -1,0 +1,5 @@
+services:
+    lilweb.assetic.filter.coffeephp:
+        class: Lilweb\CoffeescriptBundle\Assetic\Filter\CoffeescriptFilter
+        tags:
+            - { name: assetic.filter, alias: coffeescript }
