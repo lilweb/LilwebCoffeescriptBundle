@@ -7,17 +7,20 @@ A Symfony2 bundle with an Assetic filter to use Coffeescript. There is no requir
 Usage 
 -----
 
-Add the bundle to your composer.json : 
+Add the bundle to your `composer.json` : 
 
 ```json 
-     "lilweb/coffeescript-bundle", 
+...
+"lilweb/coffeescript-bundle", 
+...
 ```
 
 In your twig file, use the `coffeescript` filter :
 
-
-  {% javascripts filter="coffeescript"
-    '@AcmeBundle/Resources/assets/coffee/main.coffee'
-  %}
-    <script type="text/javascript" src="{{ asset_url }}"></script>
-  {% endjavascripts %}
+```twig
+{% javascripts filter="coffeescript"
+     '@AcmeBundle/Resources/assets/coffee/main.coffee'
+%}
+     <script type="text/javascript" src="{{ asset_url }}"></script>
+{% endjavascripts %}
+``` 
