@@ -11,7 +11,7 @@ Add the bundle to your `composer.json` :
 
 ```json 
 ...
-"lilweb/coffeescript-bundle", 
+"lilweb/coffeescript-bundle" : "0.0.1",
 ...
 ```
 
