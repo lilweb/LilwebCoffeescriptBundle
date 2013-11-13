@@ -4,8 +4,8 @@ LilwebCoffeescriptBundle
 A Symfony2 bundle with an Assetic filter to use Coffeescript. There is no requirement on Nodejs for this bundle as the Coffeescript interpreter is a pure PHP implementation by @alxit.
 
 
-Usage 
------
+Installation
+------------
 
 Add the bundle to your `composer.json` : 
 
@@ -14,6 +14,13 @@ Add the bundle to your `composer.json` :
 "lilweb/coffeescript-bundle" : "0.0.1",
 ...
 ```
+
+And add the bundle to your `AppKernel` file : 
+
+    new Lilweb\CoffeescriptBundle\LilwebCoffeescriptBundle()
+
+Usage 
+-----
 
 In your twig file, use the `coffeescript` filter :
 
